@@ -1,0 +1,30 @@
+.header {
+  background-color: #1A94FF;
+  padding-bottom: 10px;
+  .container {
+    width: 70%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    .top-bar {
+      position: relative;
+      height: 25px;
+      margin-bottom: 10px;
+      a {
+        margin-top: 5px;
+        padding: 8px 5px;
+        background-color: #333;
+        border-radius: 10px;
+        float: right;
+        color: white;
+        line-height: 20px;
+      }
+    }
+    .header-main {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+}
