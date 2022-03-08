@@ -1,28 +1,57 @@
-<div class="header">
-  <div class="container">
-    <div class="top-bar">
-      <div class="login-btn">
-        <a routerLink="/login">Đăng nhập</a>
+<div class="app-header">
+  <div class="header">
+    <div class="container">
+      <div class="top-bar">
+        <div class="login-btn">
+          <a routerLink="/login">Đăng nhập</a>
+        </div>
+      </div>
+      <div class="header-main">
+        <div class="logo">
+          <a routerLink="/">
+            <img src="assets/images/logo-white.png" alt="logo" />
+          </a>
+        </div>
+        <div class="search">
+          <input
+            type="text"
+            name=""
+            id=""
+            placeholder="Tìm kiếm..."
+            class="search__input"
+          />
+          <button type="submit" class="search__button" tabIndex="-1">
+            Search
+          </button>
+        </div>
+        <div class="actions">
+          <a routerLink="/wishlist">
+            <i class="fal fa-heart"></i>
+            <span>02</span>
+          </a>
+          <a routerLink="/cart">
+            <i class="fal fa-shopping-cart"></i>
+            <span>02</span>
+          </a>
+        </div>
       </div>
     </div>
-    <div class="header-main">
-      <div class="logo">
-        <a routerLink="/">
-          <img src="assets/images/logo.png" alt="logo" />
-        </a>
-      </div>
-      <div class="search-bar">
-        <input type="text" placeholder="Tìm kiếm" />
-        <button>
-          <i class="fas fa-search"></i>
-        </button>
-      </div>
-      <div class="cart-icon">
-        <a routerLink="/cart">
-          <i class="fas fa-shopping-cart"></i>
-          <span>0</span>
-        </a>
-      </div>
+  </div>
+  <div class="nav-bar">
+    <div class="left-nav">
+      <i class="fal fa-line-columns"></i>
+      <span>Danh mục</span>
+      <i class="fal fa-angle-down"></i>
     </div>
+    <div class="main-menu">
+      <ul>
+        <li>Trang chủ</li>
+        <li>Sản phẩm</li>
+        <li>Ưa thích</li>
+        <li>Liên hệ</li>
+        <li>Về chúng tôi</li>
+      </ul>
+    </div>
+    <div class="right-nav"></div>
   </div>
 </div>
