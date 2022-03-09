@@ -118,20 +118,54 @@
     .left-nav {
       position: relative;
       flex: 1;
-      i:nth-child(2) {
-        position: absolute;
+      i:nth-child(1) {
+        margin-left: 200px;
+        margin-right: 10px;
+      }
+      i:nth-last-child(1) {
         float: right;
+        margin-right: 50px;
       }
     }
     .main-menu {
       flex: 2;
+      position: relative;
+      &::before {
+        content: "";
+        height: 100%;
+        width: 1px;
+        background-color: #ccc;
+        position: absolute;
+        left: 0;
+      }
+      &::after {
+        content: "";
+        height: 100%;
+        width: 1px;
+        background-color: #ccc;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
       ul {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
+        li {
+          position: relative;
+          display: flex;
+          i {
+            margin-left: 5px;
+          }
+        }
       }
     }
     .right-nav {
+      text-align: center;
       flex: 1;
+      span {
+        color: red;
+        font-weight: 700;
+      }
     }
   }
 }
